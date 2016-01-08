@@ -1,6 +1,7 @@
 # chat_server.py
  
 import sys, socket, select
+from optparse import OptionParser, OptionGroup
 
 HOST = '' 
 SOCKET_LIST = []
@@ -73,7 +74,14 @@ def broadcast (server_socket, sock, message):
                     SOCKET_LIST.remove(socket)
  
 if __name__ == "__main__":
-
+    parser = OptionParser(usage="usage: %prog [options] ", version="%prog 1.0")
+    parser.add_option("-p", "--port",
+	                  action="store",
+			  dest="port",
+			  help="Set input ip for the server"
+			  )
+    (options, args) = parser.parse_args()
+    PORT = int(options.port)
     sys.exit(chat_server())
 
 
