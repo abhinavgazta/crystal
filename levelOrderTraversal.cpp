@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 struct node
@@ -49,6 +50,29 @@ void printLevelOrder(node* root) {
 	}
 }
 
+//the queue method is simpler and easier than the recursive one..
+//time complexity is O(n)
+void printLeveOrderQueue(node *root) {
+	if(root==NULL)
+		return;
+	queue<node *> q;
+	q.push(root);
+	while(q.empty() == false) {
+		node* temp = q.front();
+		cout<<"\t\n"<<temp->data;
+		q.pop();
+		//left view and right view can be handled from here.......
+		//enque left child
+		if(temp->left!=NULL) {
+			q.push(temp->left);
+		}
+		//enque right child
+		if(temp->right!=NULL) {
+			q.push(temp->right);
+		}	
+	}
+}
+
 
 node* newnode(int data) {
 	node* root = new node();
@@ -75,6 +99,7 @@ int main(int argc, char const *argv[])
 	root->right->right = newnode(19);
 	root->right->left = newnode(13);
 	printLevelOrder(root);
+	printLeveOrderQueue(root);
 	/* code */
 	return 0;
 }
