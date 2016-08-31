@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:background="#ADD8E6"
+                tools:context="com.mygdx.game.LevelActivity">
+
+    <Button
+            android:text="LEVEL ONE"
+            android:id="@+id/levelone"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#68A86A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <Button
+            android:text="LEVEL TWO"
+            android:id="@+id/leveltow"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape2"
+            android:shadowColor="#68A86A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/levelone" android:layout_alignLeft="@+id/levelone"/>
+    <Button
+            android:text="LEVEL THREE"
+            android:id="@+id/levelthree"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape3"
+            android:shadowColor="#68A86A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/leveltow" android:layout_alignLeft="@+id/leveltow"/>
+    <Button
+            android:text="LEVEL FOUR"
+            android:id="@+id/levelfour"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape4"
+            android:shadowColor="#68A86A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/levelthree"
+            android:layout_alignLeft="@+id/levelthree"/>
+
+    <Button
+            android:text="LEVEL FIVE"
+            android:id="@+id/levelfive"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape5"
+            android:shadowColor="#68A86A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/levelfour"
+            android:layout_alignLeft="@+id/levelfour"/>
+
+</RelativeLayout>

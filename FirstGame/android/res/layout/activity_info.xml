@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#228B22"
+        >
+    <TableRow>
+        <TextView
+                android:layout_column="1"
+                android:text="•"></TextView>
+        <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="Catch all the blue water drops to a total of 100 to complete level"
+                android:layout_weight="10" style="@style/GdxTheme" android:capitalize="words"
+                android:height="100dp"
+                android:gravity="center_vertical"
+                android:fontFamily="Ariel"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="9dp">
+
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+                android:layout_column="1"
+                android:text="•"></TextView>
+        <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="Avoid unknown falling objects as they will cause destruction of your bucket "
+                android:layout_weight="10" style="@style/GdxTheme" android:capitalize="words"
+                android:height="100dp"
+                android:gravity="center_vertical"
+                android:fontFamily="Ariel"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp">
+
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+                android:layout_column="1"
+                android:text="•"></TextView>
+        <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="Avoid collision of blue droplets with bottom of screen or score will decrease exponentially with every bottom"
+                android:layout_weight="10" style="@style/GdxTheme" android:capitalize="words"
+                android:height="100dp"
+                android:gravity="center_vertical"
+                android:fontFamily="Ariel"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="9dp">
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+                android:layout_column="1"
+                android:text="•"></TextView>
+        <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="Lookout for power bars that give you high scores and game playing advantages"
+                android:layout_weight="10" style="@style/GdxTheme" android:capitalize="words"
+                android:height="100dp"
+                android:gravity="center_vertical"
+                android:fontFamily="Ariel"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp">
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+                android:layout_column="1"
+                android:text="•"></TextView>
+        <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="Please share the game and compete with your friends .Save water !!. Its precious."
+                android:layout_weight="10" style="@style/GdxTheme" android:capitalize="words"
+                android:height="100dp"
+                android:gravity="center_vertical"
+                android:fontFamily="Ariel"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp">
+        </TextView>
+    </TableRow>
+</TableLayout>
+</ScrollView>
