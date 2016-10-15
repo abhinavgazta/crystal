@@ -1,9 +1,9 @@
 ## Private Repo
 
-# Contains Several works of my interest.
-* DataStructures has some dsalgo implementations but only for personal use.
-* Game brnach ahs game development code written into it.
-* Elastic search is for wirting custom filters etc.
+# Contains Several works of interest.
+* DataStructures has some ds/algo implementations but only for personal use.
+* Game branch has game development code written into it.
+* Elastic search is for writing custom filters..
 
 
 
