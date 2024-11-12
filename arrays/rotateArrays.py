@@ -66,6 +66,19 @@ def rotate_array_work(arr, d):
     :param arr:
     :param d:
     :return:
+ALGORITHM: Right... reverse...
+STEP 1: Start
+STEP 2: Reverse the array
+STEP 3: Reverse the first ‘r’ elements
+STEP 4:  Reverse the remaining ‘n-r’ elements
+STEP 5: Stop
+Fn: reverse(arr,start,end)
+Left reverse....
+STEP 1: Start
+STEP 2: Reverse the first ‘r’ elements.
+STEP 3: Reverse the remaining ‘n-r’ elements.
+STEP 4:  Reverse the entire array.
+STEP 5: Stop
     '''
     n = len(arr)
     d %= n
@@ -75,8 +88,11 @@ def rotate_array_work(arr, d):
     reverse(arr, d, n - 1)
     reverse(arr, 0, n - 1)
     '''
+    # all reverse..
     reverse(arr, 0, n - 1)
+    # first half
     reverse(arr, 0, d - 1)
+    # seond half
     reverse(arr, d, n - 1)
     print("rotated array", arr)
 
