@@ -1,0 +1,55 @@
+Behavioural Interview Practice
+
+Tell me about a time when you experienced failure.
+1. I was tasked with launching a pilot with Maruti for digitalisation of their PME workflow . Me and my team were able to expedite the pilot and get the OCR running for them , but ran into several issues with respect to integration and ensuring quality of the pipeline. Esp with new documents due to this failure , I missed a few timelines and project pilot was derailed for around 1 month. Contracts also got held up in different departments and post pilot we never saw the launch of this project in which a lot of effort via engineering was done. Learnings from this were to ensure Greenfield deployment capability is tested and arch is validated to become more multi tenant. We were able to quickly setup onboarding systems properly, lot of whitelisting of tooling/devops was automated to ensure for the next pilot we adhere to timelines.
+2. Architecture failure -: While trying to evolve out FE capabilities to a pnp style architecture without the requisite skill set we had to settle in for react web instead of react native as we ran into several implementation side issues due to non-availability of a strong FE arch and issues with server driven UI systems and complexity of the arch , where we wanted to move to a micro-frontend arch with a storybook style setup where from figma we could render fast components. Our design system too came online in between and again lead to several delays in the implementation of this arch , as we ran into several issues of non-fitment of engineering folks, time to upgrade the team to a new skill set and also deliver several FE workflows timely. 
+3. Agoda -: Massive deletion of images . We had an exercise to reduce the size of images as we stored 4 resolutions and a lot of older deleted images were marked in the system. What we did not realize that due to legacy issues we had duplicates in our image table. So we hard deleted the binaries and from all clusters across 
+
+* What was the last project you led, and what was its outcome?
+	Last project was 
+* Give me an example of a time that you felt you went above and beyond at work.
+    * 
+* Describe a time when your work was criticized, how you responded, and what happened as a result.
+    * 
+* Have you ever been on a team where someone was not doing their part? How did you handle it?
+    * 
+* Tell me about a time when you had to give someone difficult feedback. How did you handle it?
+    * 
+* How do you handle working with people who annoy you?
+    * 
+* What was the most difficult period in your life, and how did you deal with it?
+    * 
+* Give me an example of a time you did something wrong. How did you handle it?
+    * 
+* Tell me about a time when you had to deal with conflict on the job.
+    * 
+* What assignment was too difficult for you, and how did you resolve the issue?
+    * 
+* Give me an example of a difficult decision you had to make. How did you come to that decision?
+    * 
+* Give an example of an idea you implemented.
+    * 
+* Describe a mentor who has impacted you in a positive way.
+    * 
+* Was there a person in your career who really made a difference? In what way?
+    * 
+* Tell me about your proudest achievement.
+————————————————————————————————————————————————————————
+Frameworks on prioritization...
+
+RICE -: Reach , Impact , Confidence , Effort ( framework + Eisenhower matrix to determine what to do ) ….
+
+Planning cycles -: Gather inputs … AOP ,  Feedback , UAT studies , Suveys User Story interviews, 
+
+Complexity of a project -> KPI of a team.. 
+
+.......................................................................
+2 features and only bandwidth to do one . What do you do ?
+1. North start goal and company culture.. Brutal prioritisation and ensuring you are moving towards aligning with your north start. Also an alternative could be to see if you have any way to break down the work into sizeable chunks and see if we can push for milestones across features . Check with team to see if one can also get started with it as a stretch goal.
+2. Communication priority asap. ( inform relevant stakeholders )..
+
+EM -: Leadership type questions…
+
+    * 
+
+
