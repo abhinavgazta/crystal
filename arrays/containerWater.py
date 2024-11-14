@@ -22,6 +22,7 @@ def water_container_optimal(arr):
     # measure between both sides...
     while left != right:
         area = max(area, min(arr[left], arr[right]) * (right - left))
+        # move is line hieght is smaller...
         if arr[left] < arr[right]:
             left += 1
         else:
