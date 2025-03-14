@@ -16,7 +16,6 @@ def rotate_array_single(arr, k):
 
 def rotate_array(arr, k):
     '''
-
     two pointer approach to
     '''
     n = len(arr)
@@ -56,55 +55,53 @@ def reverse(arr, start, end):
         end -= 1
 
 
-def rotate_array_work(arr, d):
-    '''
+def rotate(nums, k):
+    n = len(nums)
+    k %= n  # Handle cases where k > n
 
-    works for both left or right rotation
-    sequence right -: first reverse all, then reverse first and then last.
-    for left rotation...
-    first rotate
-    :param arr:
-    :param d:
-    :return:
-ALGORITHM: Right... reverse...
-STEP 1: Start
-STEP 2: Reverse the array
-STEP 3: Reverse the first ‘r’ elements
-STEP 4:  Reverse the remaining ‘n-r’ elements
-STEP 5: Stop
-Fn: reverse(arr,start,end)
-Left reverse....
-STEP 1: Start
-STEP 2: Reverse the first ‘r’ elements.
-STEP 3: Reverse the remaining ‘n-r’ elements.
-STEP 4:  Reverse the entire array.
-STEP 5: Stop
-    '''
-    n = len(arr)
-    d %= n
-    '''
-    left rotation sequence...  
-    reverse(arr, 0, d - 1)
-    reverse(arr, d, n - 1)
-    reverse(arr, 0, n - 1)
-    '''
-    # all reverse..
-    reverse(arr, 0, n - 1)
-    # first half
-    reverse(arr, 0, d - 1)
-    # seond half
-    reverse(arr, d, n - 1)
-    print("rotated array", arr)
+    def reverse(left, right):
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
 
+    # Step 1: Reverse the entire array
+    # left = 0, right = n - 1
+    reverse(0, n - 1)
+    # left = 0, right = k - 1
+    # Step 2: Reverse the first k elements
+    reverse(0, k - 1)
+    #  left = k , right = n - 1
+    # Step 3: Reverse the remaining elements
+    reverse(k, n - 1)
+
+
+def reverseCode(arr, left, right):
+    while left != right:
+        arr[left], arr[right] = arr[right], arr[left]
+        left += 1
+        right -= 1
+    return arr
 
 if __name__ == '__main__':
     # arr = [1, 2, 3, 4, 5, 6, 7]
-    # k = 1
+    # [ 1 , 2, 3 ] left = 0 , right = n-1
+    # [ 3, 1, 2 ] left = 0, right = k-1
+    # k = 1  left = k , right n-1
     # print("some data", arr[3], arr[6])
     # # rotate_array_single(arr, k)
     # arr_one = [1, 2, 3, 4, 5, 6, 7]
     # rotate_array(arr_one, 2)
     # print("testing generic rotation left..... ")
-    arr = [1, 2, 3, 4, 5, 6]
+    # arr = [1, 2, 3, 4, 5, 6]
     # rotate_generic(arr, d=5)
-    rotate_array_work(arr, d=1)
+    # rotate_array_work(arr, d=1)
+    # Example usage:
+    nums = [1, 2, 3, 4, 5, 6, 7]
+    rotate(nums, 10)
+    print(nums)  # Output: [5, 6, 7, 1, 2, 3, 4]
+    n = len(nums)
+    bot = reverseCode(nums, 0, n-1)
+    bot = reverseCode(nums, k-1)
+    reverseCode(k, n-1)
+    print(bot)

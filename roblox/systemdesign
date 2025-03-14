@@ -1,0 +1,30 @@
+Below are some sample systems design interview questions asked at interviews.
+
+Here is a list of topics that feature in systems design interviews at Roblox:
+--------------------------------------------------------------------------------------------
+Basics of systems design
+Network protocols
+Scalable systems and scaling applications
+Replication
+Caching
+Storage and retrieval
+MapReduce and distributed file systems
+Concurrency
+Basics of API modeling
+Sharding techniques
+Measuring the performance of scalable systems
+---------------------------------------------------------------------------------------------
+
+How would you go about designing a proximity server?
+How would you go about designing a 3D game?
+How would you go about setting network protocols while designing a game?
+How are caching and sharding techniques applicable in game development?
+How would you go about designing a file-sharing service like Dropbox?
+How would you integrate cloud features in game development?
+How would you go about designing a chatbot service?
+How would you ensure that your system is secure to end-users?
+How would you approach the design of a platform like Instagram?
+What scalable features would you consider while designing an e-commerce website?
+How would you integrate in-game messaging while designing a 3D game?
+
+---------------------------------------------------------------------------------------------------
